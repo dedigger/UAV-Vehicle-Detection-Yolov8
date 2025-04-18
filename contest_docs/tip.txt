@@ -1,0 +1,5 @@
+SPPF添加LSKA注意力机制：https://blog.csdn.net/qq_40938217/article/details/144826525（江木27）
+
+C2f添加Deformable Conv V2：https://blog.csdn.net/qq_69854365/article/details/132356520（森爱。）
+
+BiLevelRoutingAttention：https://blog.csdn.net/qq_42589613/article/details/135955645（啊_旭）
