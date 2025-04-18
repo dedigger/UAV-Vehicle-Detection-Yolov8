@@ -1,0 +1,158 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: D:/YOLOv8-main/data_set  # dataset root dir
+train: C:\\Users\\86147\\Desktop\\0416\\datasets\\train  # train images (relative to 'path') 128 images
+val: C:\\Users\\86147\\Desktop\\0416\\datasets\\test # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: p tingcherangxing
+  1: p jiansurangxing
+  2: p huicherangxing
+  3: p jinzhitongxing
+  4: p jinzhishiru
+  5: p jinzhijidongcheshiru
+  6: p jinzhidaxingkecheshiru
+  7: p jinzhixiaoxingzaikeqicheshiru
+  8: p jinzhizaihuoqicheshiru
+  9: p jinzhiguacheshiru
+  10: p jinzhituolajishiru
+  11: p jinzhisanlunqichedisuhuocheshiru
+  12: p jinzhimotuocheshiru
+  13: p jinzhifeijidongcheshiru
+  14: p jinzhidiandongzixingcheshiru
+  15: p jinzhisanluncheshiru
+  16: p jinzhichulicheshiru
+  17: p jinzhirenlihuoyunsanlunchejinru
+  18: p jinzhixingrenjinru
+  19: p jinzhizuozhuan
+  20: p jinzhiyouzhuan
+  21: p jinzhizhixing
+  22: p jinzhixangzuohexiangyouzhuanwan
+  23: p jinzhizhixinghexiangzuozhuanwan
+  24: p jinzhizhixinghexiangyouzhuanwan
+  25: p jinzhidiaotou
+  26: p jinzhichaoche
+  27: p jiechujinzhichaoche
+  28: p jinzhicheliangtingfang
+  29: p jinzhicheliangchangshitingfang
+  30: p jinzhiminglaba
+  31: p xianzhikuandu
+  32: p xianzhigaodu
+  33: p xianzhizhiliang
+  34: p xianzhizhouzhong
+  35: p xianzhisudu
+  36: p jiechuxiansu
+  37: p tingchejiancha
+  38: p jinzhiweixianwupinyunshucheshiru
+  39: i zhixing
+  40: i zuozhuan
+  41: i youzhuan
+  42: i zhixinghezuozhuan
+  43: i zhixingheyouzhuan
+  44: i zuozhuanheyouzhuan
+  45: i fengedaiyoucexingshi
+  46: i fengedaizuocexingshi
+  47: i huandaoxingshi
+  48: i danxinglu
+  49: i minglaba
+  50: i kaichedeng
+  51: i zuidixiansu
+  52: i huichexianxing
+  53: i renxinghengdao
+  54: i zuozhuanchedao
+  55: i youzhuanchedao
+  56: i zhixingyouzhuanheyongchedao
+  57: i zhixingzuozhuanheyongchedao
+  58: i diaotouchedao
+  59: i diaotouzuozhuanheyongchedao
+  60: i jidongchexingshi
+  61: i jidongchechedao
+  62: i xiaoxingkechechedao
+  63: i gongjiaozhuanyongchedao
+  64: i youguidianchezhuanyongchedao
+  65: i duochengyuancheliangzhuanyongchedao
+  66: i feijidongchexingshi
+  67: i feijidongchedao
+  68: i diandongzixingchexingshi
+  69: i diandongzixingchedao
+  70: i xingren
+  71: i kaoyouchedaoxingshi
+  72: i tingshewei
+  73: i yunxudiaotou
+  74: i huochetongxing
+  75: i yinglujianyunxutongxing
+  76: w qianyoujiaochalukou
+  77: w xiangzuojiwanlu
+  78: w xiangyoujiwanlu
+  79: w fanxiangwanlu
+  80: w lianxuwanlu
+  81: w shangxiepo
+  82: w xiaxiepo
+  83: w lianxuxiapo
+  84: w zhailu
+  85: w zhaiqiao
+  86: w shuangxiangjiaotong
+  87: w zhuyixingren
+  88: w zhuyiertong
+  89: w zhuyicanjiren
+  90: w zhuyifeijidongche
+  91: w zhuyidiandongzixingche
+  92: w zhuyidongwu
+  93: w zhuyixinhaodeng
+  94: w zhuyiluoshi
+  95: w zhuyihengfeng
+  96: w yihua
+  97: w dibalu
+  98: w cunzhuang
+  99: w suidao
+  100: w tuofengqiao
+  101: w lumianbuping
+  102: w jiansuqiu
+  103: w guoshuilumian
+  104: w tieludaokou
+  105: w shiguyifaluduan
+  106: w zhuyizhangaiwu
+  107: w zhuyiweixian
+  108: w shigong
+  109: w jiaotongshiguguanli
+  110: w jianyisudu
+  111: w zhuyicheju
+  112: w zhuyichaoxichedao
+  113: w zhuyiheliu
+  114: w zhuyichedaoshubianshao
+  115: w bixianchedao
+  116: w zhuyilumianjiebing
+  117: w zhuyiqianfangcheliangpaidui
+  118: w xianxingyoudaobiao
+  119: d direction
+  120: n notice
+  121: t tourist
+  122: a auxiliary
+  123: h highway
+  124: w liangcebianzhai
+  125: w zuocebianzhai
+  126: w youcebianzhai
+  127: w zhuyiyoucechelianghuiru
+  128: w zhuyizuocechelianghuiru
+  129: w zhuyiTxingjiaocha
+  130: w zhuyiYxingjiaocha
+  131: w zhuyimanxing
+  132: i jiaotongjiankongshebei
+  133: i fenxiangxingshichedao
+  134: w zhuyifeijidongche
+  135: i yingjichedao
+  136: i kaozuocedaoluxingshi
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
